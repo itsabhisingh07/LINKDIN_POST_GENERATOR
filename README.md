@@ -19,24 +19,24 @@ Built using **LangGraph** and **Groq**, this tool takes a simple topic and itera
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
-cd YOUR_REPO_NAME
+git clone [https://github.com/itsabhisingh07/LINKDIN_POST_GENERATOR.git](https://github.com/itsabhisingh07/LINKDIN_POST_GENERATOR.git)
 ```
 
-2. Set up the environment
+# 2. Set up the environment
 Create a .env file in the root directory and add your Groq API key:
 
-Plaintext
+# Plaintext
 GROQ_API_KEY=your_api_key_here
-3. Install dependencies
+
+# 3. Install dependencies
 If you are using uv (recommended):
 
-Bash
+# Bash
 uv sync
 Or, using standard pip:
 
-Bash
+# Bash
 pip install -r requirements.txt
-4. Run the Agent
+# 4. Run the Agent
 Bash
 python main.py
