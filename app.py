@@ -1,7 +1,7 @@
 import streamlit as st
 from src.graph import app  # Imports your graph
 
-st.set_page_config(page_title="LinkedIn Post Generator", layout="centered")
+st.set_page_config(page_title="LinkedIn Caption Generator", layout="centered")
 
 if "input_text" not in st.session_state:
     st.session_state.input_text = ""
@@ -9,7 +9,7 @@ if "input_text" not in st.session_state:
 def clear_input():
     st.session_state.input_text = ""
 
-st.title(" Multi-Agent LinkedIn Post Generator")
+st.title(" Multi-Agent LinkedIn Caption Generator")
 st.markdown("Provide your topic, key takeaways, or thoughts, and let the LangGraph agents craft a professional post.")
 
 user_topic = st.text_area(
@@ -45,9 +45,9 @@ if generate_btn:
             result = app.invoke(initial_state)
             
             # 3. Print the results to the web page
-            st.success("Post Generation Complete!")
+            st.success("Caption Generation Complete!")
             
-            st.markdown("### Your LinkedIn Post:")
+            st.markdown("### Your LinkedIn Caption:")
             st.write(result["post"])  # Extracts just the text, exactly like your main.py
             
             st.markdown("---")
